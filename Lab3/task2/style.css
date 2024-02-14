@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#bed8ef, #518b81);
+    font-family: Georgia, sans-serif;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: #456d9d;
+  }
+  ul {
+    list-style-type: none; 
+  }
+
+  .container {
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  h1 {
+    color: #7a5889;
+    font-size: 3rem;
+  }
+
+  .todo-form {
+    margin: 40px 0px;
+  }
+
+  .todo-input{
+    width: 400px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    box-shadow: 4px 2px 2px 2px #996399;
+    
+  }
+  .add-button {
+    background-color: #531b4a;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 4px 2px #cab2c6;
+  }
+
+  .todo-items {
+    min-width: 550px;
+  }
+
+  .item {
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  .item:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .checkbox {
+    margin-right: 10px;
+  }
+  .delete-button {
+    float: right;
+    background-color: #969293;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 2px 5px;
+    margin-left: 10px;
+    margin-top: -2px;
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+  
+  .item input{
+    border-style: none;
+    padding-bottom: 3px;
+  }
+
+  .checked { 
+    text-decoration: line-through;
+    background-color: rgb(58, 77, 96);
+  }
+  .empty-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .empty-list__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 549;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .empty-list img{
+    margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .none {
+    display: none !important;
+  }
