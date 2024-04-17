@@ -1,0 +1,13 @@
+<h1 (click)="viewTopTen()">View Top ten vacancies by salary</h1>
+
+<div
+  *ngFor="let vacancy of vacancies"
+  class="vacancy-holder"
+  (click)="viewVacancyDetails(vacancy.id)"
+>
+  <h3>{{ vacancy.name }}</h3>
+  <p>Salary: {{ vacancy.salary }}</p>
+  <a [routerLink]="['/companies', vacancy.company.id]">{{
+    vacancy.company.name
+  }}</a>
+</div>
